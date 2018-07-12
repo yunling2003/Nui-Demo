@@ -1,0 +1,19 @@
+
+#header{
+    position: absolute;;
+    top: 0;
+    left: 0;
+    z-index: 9;   
+    display:block;   
+    text-align:left;
+    padding: 0 0 0 0;
+}
+
+.dnvgl-logo-container{
+    text-align: right;
+}
+
+ .dnvgl-branding-logo{
+    background: none repeat scroll 0 0 #FFF;
+    display: block;    
+ }

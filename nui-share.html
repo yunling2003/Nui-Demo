@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CRM Frontend with Angular</title>
+    <meta name="description" content="Introduction about CRM frontend">
+    <meta name="author" content="Leon Ling">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/white.css" id="theme">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="nui-share.css">
+    <style>
+        .reveal .slides section h1,
+        .reveal .slides section h2,
+        .reveal .slides section h3,
+        .reveal .slides section h4,
+        .reveal .slides section h5,
+        .reveal .slides section h6 {
+            text-transform: none;
+        }
+
+        .reveal .slides section .photo-mark {
+            position: absolute;
+            color: yellow;
+            top: 30px;
+            width: 100%;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        .reveal pre {
+            box-shadow: none;
+        }
+
+        .reveal .slides section .cn {
+            font-family: 'Microsoft YaHei';
+        }
+
+        .reveal .slides section .line-through {
+            text-decoration: line-through;
+        }
+
+        .reveal .slides section .second-title,
+        .reveal .slides section ul>li .fa {
+            opacity: 0.6;
+        }
+
+        .reveal .slides section .no-margin-bottom {
+            margin-bottom: 0px;
+        }
+
+        .reveal pre code {
+            max-height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div id="header">
+            <div class="dnvgl-logo-container">
+                <a href="/" class="dnvgl-branding-logo">
+                    <img src="./images/dnvgllogo_large.png" title="DNVGL.com" alt="DNV GL logo" width="252" height="101">
+                </a>
+            </div>
+        </div>
+        <div class="slides">
+            <section>
+                <h2>Build CRM Frontend with Angular</h2>
+                <h4>Digital Solutions</h4>
+                <h4>By
+                    <a href="mailto:yun.leon.ling@dnvgl.com">Leon Ling</a>
+                </h4>
+            </section>
+            <section>
+                <section>
+                    <h4>History</h4>
+                    <p class="fragment fade-in">2000 - 2007, v5.0, Windows Form</p>
+                    <p class="fragment fade-in">2007, v6.0, ASP.NET Web Form, IE7</p>
+                    <p class="fragment fade-in">2015, v6.1, ASP.NET Web Form, IE11, Firefox</p>
+                    <p class="fragment fade-in">2017, v7.0, SPA, IE11, Chrome, Firefox</p>
+                    <p class="fragment fade-in">2018, v7.1</p>
+                </section>
+                <section>
+                    <h4>v7 History</h4>
+                    <iframe src="http://iccnui.com/nuitalk/v7timeline.html" frameborder="0" width="700px" height="520px"></iframe>
+                </section>
+            </section>
+            <section data-transition="slide-in fade-out">
+                <section>
+                    <h4>Tech Stack Candidates</h4>
+                    <h5 class="second-title">Client side</h5>
+                    <ul>
+                        <li>React</li>
+                        <li>Polymer</li>
+                        <li class="fragment highlight-red">Angular 2</li>
+                        <li class="line-through">Backbone</li>
+                        <li class="line-through">Knockout</li>
+                        <li class="line-through">Ember</li>
+                        <li class="line-through">Vue</li>
+                        <li class="line-through">Others...</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Prototype projects</h4>
+                    <img src="images/UI_Refresh_Prototypes_On_Bitbucket.png" alt="Bitbucket">
+                </section>
+                <section>
+                    <h4>React</h4>
+                    <img src="images/prototype_react.png" alt="React">
+                </section>
+                <section>
+                    <h4>Polymer</h4>
+                    <img src="images/prototype_polymer.png" alt="Polymer">
+                </section>
+                <section>
+                    <h4>Angular 2</h4>
+                    <img src="images/prototype_angular2.png" alt="Angular2">
+                </section>
+                <section>
+                    <h4>DAR Matrix</h4>
+                    <img src="images/DAR_Matrix.png" alt="DAR Matrix">
+                </section>
+            </section>
+            <section data-transition="convex">
+                <section>
+                    <h4>Tech Stack Candidates</h4>
+                    <h5 class="second-title">Server side</h5>
+                    <ul>
+                        <li>Neo Handler</li>
+                        <li>MVC Web API</li>
+                        <li class="fragment highlight-red">GraphQL</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>GraphiQL</h4>
+                    <img src="images/GraphiQL.png" alt="GraphiQL" style="width: 90%;">
+                </section>
+            </section>
+            <section data-transition="concave">
+                <section>
+                    <h4>Tech Stack Candidates</h4>
+                    <h5 class="second-title">Grid Control</h5>
+                    <ul>
+                        <li>ag-grid</li>
+                        <li>PrimeNG</li>
+                        <li>Wijimo</li>
+                        <li class="fragment highlight-red">jqGrid</li>
+                        <li>igGrid</li>
+                        <li>jqWidget</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Grids Evaluation</h4>
+                    <img src="images/grid_perf.png" alt="Grid Evaluation" style="height: 550px; width: 650px;">
+                </section>
+            </section>
+            <section>
+                <h3>PSM Weakness</h3>
+                <ul>
+                    <li class="fragment grow">Non-Resizable</li>
+                    <li class="fragment grow">Outdated Look & Feel</li>
+                    <li class="fragment grow">Limited Compatible Browsers</li>
+                    <li class="fragment grow">Multi-Layers Modal Dialogs</li>
+                    <li class="fragment grow">Multi-Instances per User/DSN unsupported</li>
+                    <li class="fragment grow">Lack of Customization ability </li>
+                </ul>
+            </section>
+            <section data-transition="convex">
+                <section>
+                    <h4 class="second-title no-margin-bottom">CSR Dashboard</h4>
+                    <img src="images/Nui_RedDark.png" alt="NUI Red Dark">
+                </section>
+                <section>
+                    <h4 class="second-title no-margin-bottom">PSM Spoke</h4>
+                    <img src="images/Nui_RedDark_Spoke.png" alt="NUI Red Dark with Spoke">
+                </section>
+            </section>
+            <section data-transition="convex">
+                <section>
+                    <h3>Achievements</h3>
+                    <ul>
+                        <li>Framework</li>
+                        <li>Business Features</li>
+                        <li>Performance Test</li>
+                        <li>SDK</li>
+                        <li>Documentation</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4 class="second-title no-margin-bottom">Controls</h4>
+                    <iframe src="http://iccnui.com/nuitalk/controls_tag_cloud.html" frameborder="0" height="550px" width="550px"></iframe>
+                </section>
+                <section>
+                    <h4 class="second-title no-margin-bottom">General</h4>
+                    <ul style="font-size: 28px">
+                        <li>Responsive UI</li>
+                        <li>Theme</li>
+                        <li>Security / Permission</li>
+                        <li>Translation / Localization</li>
+                        <li>Data Management</li>
+                        <li>Keyboard navigation & Shortcuts</li>
+                        <li>Multiple instances per User/DSN/Culture/Theme</li>
+                        <li>PSM Integration</li>
+                        <li>Refresh mechanism</li>
+                        <li>Consistent entrance for 3rd party system</li>
+                        <li>Batch Query / GZip</li>
+                        <li>Cache</li>
+                        <li>Customization by Configuration</li>
+                        <li>Unit Tests</li>
+                        <li>Build Process & DM</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Business Features</h4>
+                    <ul style="font-size: 30px">
+                        <li>Centralized Customer Search</li>
+                        <li>67 Data tables</li>
+                        <li>Customer Overview</li>
+                        <li>CSR Tabbed Dashboard</li>
+                        <li>Quick link</li>
+                        <li>Sparklets (FA, Alert, Loyalty)</li>
+                        <li>Product Summary Tree</li>
+                        <li>Recent Contact</li>
+                        <li>Last Invoice</li>
+                        <li>Create Contact</li>
+                        <li>Todo list</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Performance Test</h4>
+                    <ul>
+                        <li>Load Test
+                            <i class="fa fa-users"></i>
+                        </li>
+                        <li>Endurance Test
+                            <i class="fa fa-bicycle"></i>
+                        </li>
+                        <li>Client Perf
+                            <i class="fa fa-chrome"></i>
+                            <i class="fa fa-internet-explorer"></i>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>SDK</h3>
+                    <ul>
+                        <li>Type script definition files</li>
+                        <li>API Documentation</li>
+                        <li>General Guide</li>
+                        <li>CLI tool with Sample Project</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Documentation</h3>
+                    <ul>
+                        <li>User Guide</li>
+                        <li>Online help</li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            progress: true,
+            transition: 'zoom',
+            backgroundTransition: 'zoom',
+
+            dependencies: [
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.201711092/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/marked/0.4.0/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/markdown.js/0.5.0/markdown.min.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom.js', async: true },
+                { src: 'plugin/notes.js', async: true }
+            ]
+        });
+    </script>
+</body>
+
+</html>
